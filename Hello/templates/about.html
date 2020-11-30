@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block title %} 
+About
+{% endblock title %}
+{% block body %}
+
+<main role="main">
+
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Our Chefs</h1>
+        <p class="lead text-muted">Meet our World class Chefs from all over the world.</p>
+        <p>
+          <a href="/services" class="btn btn-primary my-2">Services we Offer</a>
+          
+        </p>
+      </div>
+    </section>
+
+
+    <div class="container my-2">
+
+        <h2>Our Chefs </h2>
+        <div class="card-deck">
+          <div class="card">
+            <!-- set a width on the image otherwise it will expand to full width       -->
+            <img class="card-img-top img-fluid" src="{% static 'images/team3.jpg' %}" alt="Card image cap" width="400">
+            <div class="card-body">
+              <h4 class="card-title">Jessica Rossman</h4>
+              <p class="card-text">Head Chef</p>
+            </div>
+          </div>
+          <!-- /.card -->
+      
+          <div class="card">
+            <!-- set a width on the image otherwise it will expand to full width       -->
+            <img class="card-img-top img-fluid" src="{% static 'images/team2.jpg' %}" alt="Card image cap" width="400">
+            <div class="card-body">
+              <h4 class="card-title">Kabir Memon</h4>
+              <p class="card-text">Executive Chef </p>
+            </div>
+          </div>
+          <!-- /.card -->
+      
+          <div class="card">
+            <!-- set a width on the image otherwise it will expand to full width       -->
+            <img class="card-img-top img-fluid" src="{% static 'images/team1.jpg' %}" alt="Card image cap" width="400">
+            <div class="card-body">
+              <h4 class="card-title">Devika Deshmukari</h4>
+              <p class="card-text">Chef</p>
+            </div>
+          </div>
+          <!-- /.card -->
+    
+      
+      
+        </div>
+        <!-- /.card-deck -->
+      
+      
+        
+
+
+
+
+
+{% endblock body %}
